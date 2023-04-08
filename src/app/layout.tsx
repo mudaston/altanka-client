@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-import '@/style/reset.css'
+import '@style/reset.css'
 
 export const metadata: Metadata = {
     title: {
