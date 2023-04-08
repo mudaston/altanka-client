@@ -43,6 +43,10 @@
         "react/react-in-jsx-scope": "off",
         "jsx-quotes": ["error", "prefer-single"],
         "react-hooks/rules-of-hooks": "error",
-        "react-hooks/exhaustive-deps": "warn"
+        "react-hooks/exhaustive-deps": "warn",
+        // next
+        "@next/next/no-html-link-for-pages": ["error", "src/app"],
+        // ts
+        "@typescript-eslint/no-empty-interface": "off"
     }
 }

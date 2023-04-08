@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-import '@style/reset.css'
+import '@app/styles/reset.css'
 
 export const metadata: Metadata = {
     title: {
@@ -14,7 +14,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang='ru'>
-            <body>{children}</body>
+            <body>
+                <main>{children}</main>
+            </body>
         </html>
     )
 }

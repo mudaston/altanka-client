@@ -1,3 +1,9 @@
+import { Button } from '@shared/ui/button'
+
 export default function Home() {
-    return <main>123</main>
+    return (
+        <>
+            <Button disabled>HELLO BITCH</Button>
+        </>
+    )
 }
