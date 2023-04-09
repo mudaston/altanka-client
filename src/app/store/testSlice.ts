@@ -17,8 +17,6 @@ export const testSlice = createSlice({
   initialState,
   reducers: {
     increment(state) {
-      console.log('awdawd')
-
       state.number += 1
     },
     decrement(state) {
