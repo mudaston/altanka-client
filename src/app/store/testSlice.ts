@@ -26,7 +26,7 @@ export const testSlice = createSlice({
       state.number = action.payload
     },
   },
-  extraReducers: {
+  extraReducers: (builder) => {
     [HYDRATE]: (state, action) => {
       return {
         ...state,
