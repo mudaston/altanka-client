@@ -1,39 +1,42 @@
 {
-    "name": "altanka",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint . ",
-        "lint:fix": "npm run lint -- --fix",
-        "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc . ",
-        "prepare": "husky install"
-    },
-    "dependencies": {
-        "classnames": "^2.3.2",
-        "next": "^13.2.4",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0"
-    },
-    "devDependencies": {
-        "@feature-sliced/eslint-config": "^0.1.0-beta.6",
-        "@types/node": "^18.15.11",
-        "@types/react": "^18.0.33",
-        "@types/react-dom": "^18.0.11",
-        "@typescript-eslint/eslint-plugin": "^5.57.1",
-        "eslint": "^8.38.0",
-        "eslint-config-next": "^13.2.4",
-        "eslint-config-prettier": "^8.8.0",
-        "eslint-plugin-boundaries": "^3.1.1",
-        "eslint-plugin-import": "^2.27.5",
-        "eslint-plugin-prettier": "^4.2.1",
-        "eslint-plugin-react": "^7.32.2",
-        "eslint-plugin-react-hooks": "^4.6.0",
-        "husky": "^8.0.0",
-        "prettier": "^2.8.7",
-        "sass": "^1.61.0",
-        "typescript": "^5.0.4"
-    }
+  "name": "altanka",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint . ",
+    "lint:fix": "npm run lint -- --fix",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc . ",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
+    "classnames": "^2.3.2",
+    "next": "^13.2.4",
+    "next-redux-wrapper": "^8.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5"
+  },
+  "devDependencies": {
+    "@feature-sliced/eslint-config": "^0.1.0-beta.6",
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "eslint": "^8.38.0",
+    "eslint-config-next": "^13.2.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-boundaries": "^3.1.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.0",
+    "prettier": "^2.8.7",
+    "sass": "^1.61.0",
+    "typescript": "^5.0.4"
+  }
 }

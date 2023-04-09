@@ -12,15 +12,15 @@ interface ButtonProps {}
 type Props = ButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>
 
 const Button: FC<Props> = ({ children }) => {
-    const clickHandler = () => {
-        console.log('hello world')
-    }
+  const clickHandler = () => {
+    console.log('hello world')
+  }
 
-    return (
-        <button className={cn('button')} type='button' onClick={clickHandler}>
-            {children}
-        </button>
-    )
+  return (
+    <button className={cn('button')} type='button' onClick={clickHandler}>
+      {children}
+    </button>
+  )
 }
 
 export default Button
