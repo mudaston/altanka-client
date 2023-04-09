@@ -2,6 +2,8 @@ import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
 import { HYDRATE } from 'next-redux-wrapper'
 
+import type { HydrateAction } from '@shared/lib/types'
+
 interface InitialState {
   number: number
 }
@@ -27,11 +29,11 @@ export const testSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    [HYDRATE]: (state, action) => {
+    builder.addCase(HYDRATE, (state, action: HydrateAction<InitialState>) => {
       return {
         ...state,
-        ...action.payload['testSlice'],
+        ...action.payload[testSlice.name],
       }
-    },
+    })
   },
 })
