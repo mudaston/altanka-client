@@ -4,3 +4,5 @@ README.md
 package-lock.json
 
 .vscode
+
+src/app/styles/scss
