@@ -1,0 +1,52 @@
+// ========================================= //
+//            Foundation - colors            //
+// ========================================= //
+
+/** 
+ * This file defines the actual colors that will be used for styling.
+ * They will default to the palette with variables we defined in the _variable.scss file.
+ */
+
+ 
+@mixin colors {
+  // ========================================= //
+  //                    Body                   //
+  // ========================================= //
+
+  --alt-body-bg: #{$white};
+  --alt-body-text: #{$black};
+
+
+  // ========================================= //
+  //                  Buttons                  //
+  // ========================================= //
+
+  /* Primary */
+  --alt-btn-primary-text: #{$white};
+  --alt-btn-primary-bg: #{$orange0};
+
+  --alt-btn-primary-bg-hover: #{$orange30};
+
+
+  /* Secondary */
+  --alt-btn-secondary-text: #{$orange30};
+  --alt-btn-secondary-bg: #{$orange90};
+
+  --alt-btn-secondary-bg-hover: #{$orange99};
+
+
+  /* Tretiary */
+  --alt-btn-tretiary-text: #{$gray40};
+  --alt-btn-tretiary-bg: #{$gray95};
+
+  --alt-btn-tretiary-text-hover: #{$black};
+  --alt-btn-tretiary-bg-hover: #{$gray95};
+
+
+  // ========================================= //
+  //                   Links                   //
+  // ========================================= //
+
+  --alt-link: #{$black};
+  --alt-link-hover: #{$orange0};
+}

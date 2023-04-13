@@ -4,6 +4,8 @@ import { Provider } from 'react-redux'
 import { wrapper } from '@app/store'
 import RootLayout from '@layouts/root-layout'
 
+import '@app/styles/scss/main.scss'
+
 function App({ Component, ...rest }: AppProps) {
   const { store, props } = wrapper.useWrappedStore(rest)
 

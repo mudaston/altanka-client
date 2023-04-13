@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>Home</title>
       </Head>
-      Home page
+      <div className='alt-p-sm'>Home page</div>
       <Link href='about'>To the About page</Link>
     </>
   )

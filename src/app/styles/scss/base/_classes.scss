@@ -1,0 +1,96 @@
+// ========================================= //
+//               Base - classes              //
+// ========================================= //
+
+/** 
+ * This file defines the classes that will be used throughout the application.
+ */
+
+
+// ========================================= //
+//                 Typography                //
+// ========================================= //
+
+/* Font sizes */
+@each $key, $value in $font-sizes {
+	.alt-#{$key} {
+		font-size: $value;
+	}
+}
+
+/* Font weights */
+@each $key, $value in $font-weights {
+	.alt-#{$key} {
+		font-weight: $value;
+	}
+}
+
+// ========================================= //
+//                  Spacing                  //
+// ========================================= //
+
+/* Margins */
+@each $key, $value in $spacing {
+	.alt-mt-#{$key} {
+		margin-top: $value;
+	}
+
+	.alt-mr-#{$key} {
+		margin-right: $value;
+	}
+
+	.alt-mb-#{$key} {
+		margin-bottom: $value;
+	}
+
+	.alt-ml-#{$key} {
+		margin-left: $value;
+	}
+
+	.alt-mx-#{$key} {
+		margin-left: $value;
+		margin-right: $value;
+	}
+
+	.alt-my-#{$key} {
+		margin-top: $value;
+		margin-bottom: $value;
+	}
+
+	.alt-m-#{$key} {
+		margin: $value;
+	}
+}
+
+/* Paddings */
+@each $key, $value in $spacing {
+	.alt-pt-#{$key} {
+		padding-top: $value;
+	}
+
+	.alt-pr-#{$key} {
+		padding-right: $value;
+	}
+
+	.alt-pb-#{$key} {
+		padding-bottom: $value;
+	}
+
+	.alt-pl-#{$key} {
+		padding-left: $value;
+	}
+
+	.alt-px-#{$key} {
+		padding-left: $value;
+		padding-right: $value;
+	}
+
+	.alt-py-#{$key} {
+		padding-top: $value;
+		padding-bottom: $value;
+	}
+
+	.alt-p-#{$key} {
+		padding: $value;
+	}
+}

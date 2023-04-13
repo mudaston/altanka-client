@@ -61,6 +61,12 @@
         }
       }
     ],
-    "import/newline-after-import": ["error", { "count": 1 }]
+    "import/newline-after-import": ["error", { "count": 1 }],
+    "import/no-internal-modules": [
+      "error",
+      {
+        "forbid": ["./src/app/styles/scss/**"]
+      }
+    ]
   }
 }
