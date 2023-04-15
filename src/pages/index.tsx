@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 import { wrapper } from '@/app/store'
 import { testSlice } from '@/app/store/testSlice'
+import { Button } from '@shared/ui/button'
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
       </Head>
       <div className='alt-p-sm'>Home page</div>
       <Link href='about'>To the About page</Link>
+      <Button variant='tretiary' as={Link} href='/about'>
+        Добавить в корзину за 469
+      </Button>
     </>
   )
 }

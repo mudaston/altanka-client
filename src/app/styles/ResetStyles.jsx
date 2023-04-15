@@ -2,6 +2,10 @@ const ResetStyles = () => {
   return (
     <style>
       {`
+        * {
+          box-sizing: border-box;
+        }
+
         fieldset,
         legend {
           border: 0;
@@ -138,13 +142,6 @@ const ResetStyles = () => {
           -webkit-appearance: none;
           -moz-appearance: none;
         }
-        input[type='search'] {
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          -webkit-box-sizing: content-box;
-          -moz-box-sizing: content-box;
-          box-sizing: content-box;
-        }
         audio,
         canvas,
         video {
@@ -207,14 +204,7 @@ const ResetStyles = () => {
         }
         input[type='checkbox'],
         input[type='radio'] {
-          box-sizing: border-box;
           padding: 0;
-        }
-        input[type='search'] {
-          -webkit-appearance: textfield;
-          -moz-box-sizing: content-box;
-          -webkit-box-sizing: content-box;
-          box-sizing: content-box;
         }
         input[type='search']::-webkit-search-cancel-button,
         input[type='search']::-webkit-search-decoration {

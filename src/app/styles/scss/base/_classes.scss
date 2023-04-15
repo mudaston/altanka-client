@@ -20,7 +20,7 @@
 
 /* Font weights */
 @each $key, $value in $font-weights {
-	.alt-#{$key} {
+	.alt-fw-#{$key} {
 		font-weight: $value;
 	}
 }

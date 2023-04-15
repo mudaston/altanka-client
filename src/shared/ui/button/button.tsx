@@ -1,26 +1,35 @@
-'use client'
+import cn from 'classnames'
+import React from 'react'
 
-import classNames from 'classnames/bind'
-import React, { FC } from 'react'
+import type { DynamicallyTypedComponent } from './types'
 
-import scss from './button.module.scss'
-
-const cn = classNames.bind(scss)
-
-interface ButtonProps {}
-
-type Props = ButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>
-
-const Button: FC<Props> = ({ children }) => {
-  const clickHandler = () => {
-    console.log('hello world')
-  }
+function Button<T extends React.ElementType>({
+  children,
+  className,
+  variant,
+  size,
+  as,
+  ...rest
+}: DynamicallyTypedComponent<T>) {
+  const Component = as ?? 'button'
 
   return (
-    <button className={cn('button')} type='button' onClick={clickHandler}>
+    <Component
+      className={cn(className)}
+      type='button'
+      data-type={variant}
+      data-size={size}
+      {...rest}
+    >
       {children}
-    </button>
+    </Component>
   )
+}
+
+Button.defaultProps = {
+  variant: 'tretiary',
+  size: 'small',
+  as: 'button',
 }
 
 export default Button

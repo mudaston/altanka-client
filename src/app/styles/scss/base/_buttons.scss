@@ -1,0 +1,70 @@
+// ========================================= //
+//               Base - buttons              //
+// ========================================= //
+
+[type="button"] {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+
+	margin: 0;
+
+	border: none;
+	border-radius: 9999px;
+
+
+	font-family: var(--montserrat);
+	font-weight: 500;
+	line-height: normal;
+	text-decoration: none;
+	cursor: pointer;
+
+	transition: background-color .25s ease 0s;
+
+	&[data-type="primary"] {
+		background-color: var(--alt-btn-primary-bg);
+		color: var(--alt-btn-primary-text);
+
+		&:hover {
+			background-color: var(--alt-btn-primary-bg-hover);
+		}
+	}
+
+	&[data-type="secondary"] {
+		background-color: var(--alt-btn-secondary-bg);
+		color: var(--alt-btn-secondary-text);
+
+		&:hover {
+			background-color: var(--alt-btn-secondary-bg-hover);
+		}
+	}
+
+	&[data-type="tretiary"] {
+		background-color: var(--alt-btn-tretiary-bg);
+		color: var(--alt-btn-tretiary-text);
+
+		transition: background-color .25s ease, color .25s ease;
+
+		&:hover {
+			background-color: var(--alt-btn-tretiary-bg-hover);
+			color: var(--alt-btn-tretiary-text-hover);
+		}
+	}
+}
+
+[data-size="small"] {
+	padding: 0.5rem 1rem;
+	font-size: 14px;
+}
+
+[data-size="medium"] {
+	padding: 8px 20px;
+	font-size: 16px;
+}
+
+[data-size="big"] {
+	padding: 12px 24px;
+	font-size: 16px;
+}
