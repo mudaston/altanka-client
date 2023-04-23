@@ -1,4 +1,5 @@
-import type { GetServerSideProps } from 'next'
+import type { GetServerSideProps, NextPage } from 'next'
+import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import Link from 'next/link'
 
@@ -6,7 +7,10 @@ import { wrapper } from '@/app/store'
 import { testSlice } from '@/app/store/testSlice'
 import { Button } from '@shared/ui/button'
 
-export default function Home() {
+const MobileMenu = dynamic(() => import('@shared/ui/mobile-menu').then((mod) => mod.MobileMenu))
+const DesktopMenu = dynamic(() => import('@shared/ui/desktop-menu').then((mod) => mod.DesktopMenu))
+
+const Home: NextPage<Page> = ({ mobile }) => {
   return (
     <>
       <Head>
@@ -14,15 +18,15 @@ export default function Home() {
       </Head>
       <div className='alt-p-sm'>Home page</div>
       <Link href='about'>To the About page</Link>
-      <Button variant='tretiary' as={Link} href='/about'>
-        Добавить в корзину за 469
-      </Button>
+      <Button variant='tretiary'>Добавить в корзину за 469</Button>
+      {mobile && <MobileMenu />}
+      {!mobile && <DesktopMenu />}
     </>
   )
 }
 
 export const getServerSideProps: GetServerSideProps = wrapper.getServerSideProps(
-  (store) => async (_context) => {
+  (store) => async (context) => {
     // store.dispatch(testSlice.actions.increment())
     store.dispatch(testSlice.actions.setNumber(12))
 
@@ -31,3 +35,5 @@ export const getServerSideProps: GetServerSideProps = wrapper.getServerSideProps
     }
   }
 )
+
+export default Home
