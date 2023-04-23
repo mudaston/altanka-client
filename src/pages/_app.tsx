@@ -24,17 +24,31 @@ function MyApp({ Component, ...rest }: AppProps) {
 
 MyApp.getInitialProps = async (ctx: any) => {
   const initialProps = await App.getInitialProps(ctx)
-  const { rawHeaders } = ctx.ctx.req
+
+  const { req } = ctx.ctx
+
+  const rawHeaders = req?.rawHeaders ?? []
 
   const userAgent = getUserAgent(rawHeaders)
   const mobile = isMobile(userAgent)
 
+  const pageProps = {}
+
+  // pass prop to all pages
+  Object.defineProperty(pageProps, 'mobile', {
+    enumerable: true,
+    get() {
+      if (!req && process.env.NODE_ENV === 'development') {
+        console.warn('to have access to user`s device type page must be server side rendered (SSR)')
+      }
+
+      return mobile
+    },
+  })
+
   return {
     ...initialProps,
-    pageProps: {
-      // pass prop to all pages
-      mobile,
-    },
+    pageProps,
   }
 }
 
