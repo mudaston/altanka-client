@@ -3,7 +3,7 @@ import React from 'react'
 
 import type { DynamicallyTypedComponent } from './types'
 
-function Button<T extends React.ElementType>({
+function Button<T extends React.ElementType = 'button'>({
   children,
   className,
   variant,
