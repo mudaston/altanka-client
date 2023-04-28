@@ -1,0 +1,28 @@
+.menu {
+  display: flex;
+  min-height: 5rem;
+
+  /* .menu__brand */
+
+  &__brand {
+  }
+
+  /* .menu__brand-title */
+
+  &__brand-title {
+  }
+
+  /* .menu__ul */
+
+  &__ul {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+  }
+
+  /* .'menu__link */
+
+  &__link {
+  }
+}
