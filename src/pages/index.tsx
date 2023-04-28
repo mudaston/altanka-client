@@ -1,14 +1,10 @@
 import type { GetServerSideProps, NextPage } from 'next'
-import dynamic from 'next/dynamic'
 import Head from 'next/head'
-import Link from 'next/link'
 
 import { wrapper } from '@/app/store'
 import { testSlice } from '@/app/store/testSlice'
 import { Button } from '@shared/ui/button'
-
-const MobileMenu = dynamic(() => import('@shared/ui/mobile-menu').then((mod) => mod.MobileMenu))
-const DesktopMenu = dynamic(() => import('@shared/ui/desktop-menu').then((mod) => mod.DesktopMenu))
+import { Link } from '@shared/ui/link'
 
 const Home: NextPage<Page> = ({ mobile }) => {
   return (
@@ -17,10 +13,17 @@ const Home: NextPage<Page> = ({ mobile }) => {
         <title>Home</title>
       </Head>
       <div className='alt-p-sm'>Home page</div>
-      <Link href='about'>To the About page</Link>
-      <Button variant='tretiary'>Добавить в корзину за 469</Button>
-      {mobile && <MobileMenu />}
-      {!mobile && <DesktopMenu />}
+      <Link size='small' href='about'>
+        To the About page :DDDD
+      </Link>
+      <Button variant='primary' as={Link} href={'/about'}>
+        <div>
+          <div>Добавить в корзину за 469</div>
+          <br />
+          <br />
+          <div>Добавить в корзину за 469</div>
+        </div>
+      </Button>
     </>
   )
 }
