@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app'
 import App from 'next/app'
+import Head from 'next/head'
 import { Provider } from 'react-redux'
 
 import { getUserAgent } from '@app/device-detect'
@@ -12,10 +13,14 @@ import '@app/styles/scss/main.scss'
 function MyApp({ Component, ...rest }: AppProps) {
   const { store, props } = wrapper.useWrappedStore(rest)
   const { pageProps } = props
+  const { mobile } = pageProps
 
   return (
     <Provider store={store}>
-      <RootLayout>
+      <Head>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+      </Head>
+      <RootLayout mobile={mobile}>
         <Component {...pageProps} />
       </RootLayout>
     </Provider>
