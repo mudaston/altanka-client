@@ -16,6 +16,9 @@ const Home: NextPage<Page> = ({ mobile }) => {
       <Link size='small' href='about'>
         To the About page :DDDD
       </Link>
+      <Button href={'/about'} variant='secondary' as={Link}>
+        Hello world
+      </Button>
 
       <section>Some other section</section>
       <section>Some other section</section>
