@@ -28,3 +28,16 @@
     @content;
   }
 }
+
+// ========================================= //
+//               Pseudo classes              //
+// ========================================= //
+
+/* pseudo-class mixin that only works on non-touch devices */
+@mixin hover {
+  @media only screen and (hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    }
+  }
+}
