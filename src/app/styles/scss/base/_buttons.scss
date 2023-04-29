@@ -31,7 +31,7 @@
 		background-color: var(--alt-btn-primary-bg);
 		color: var(--alt-btn-primary-text);
 
-		&:hover {
+		@include hover {
 			background-color: var(--alt-btn-primary-bg_hover);
 		}
 	}
@@ -40,7 +40,7 @@
 		background-color: var(--alt-btn-secondary-bg);
 		color: var(--alt-btn-secondary-text);
 
-		&:hover {
+		@include hover {
 			background-color: var(--alt-btn-secondary-bg_hover);
 		}
 	}
@@ -51,7 +51,7 @@
 
 		transition: background-color .25s ease, color .25s ease;
 
-		&:hover {
+		@include hover {
 			background-color: var(--alt-btn-tretiary-bg_hover);
 			color: var(--alt-btn-tretiary-text_hover);
 		}

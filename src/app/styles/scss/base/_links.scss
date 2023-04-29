@@ -35,7 +35,7 @@
 			color: var(--alt-link-primary-text_active);
 		}
 
-		&:hover {
+		@include hover {
 			color: var(--alt-link-primary-text_hover);
 		}
 	}
