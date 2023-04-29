@@ -20,7 +20,8 @@
 	text-decoration: none;
 	cursor: pointer;
 
-	transition: color .25s ease 0s;
+	transition: color .25s ease 0s,
+				background-color .25s ease 0s;
 
 	&:focus {
 		outline: none;
