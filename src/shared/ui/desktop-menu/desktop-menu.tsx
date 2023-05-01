@@ -22,7 +22,7 @@ const DesktopMenu = () => {
         <ul className={cn('menu__ul')}>
           <li>
             <Link
-              className={cn('menu__link', 'alt-p-sm')}
+              className={cn('menu__link', 'alt-p-xs')}
               href={Routes.HOME}
               size='small'
               shallow
@@ -33,7 +33,7 @@ const DesktopMenu = () => {
           </li>
           <li>
             <Link
-              className={cn('menu__link', 'alt-p-sm')}
+              className={cn('menu__link', 'alt-p-xs')}
               href={'/about'}
               size='small'
               shallow
@@ -44,7 +44,7 @@ const DesktopMenu = () => {
           </li>
           <li>
             <Link
-              className={cn('menu__link', 'alt-p-sm')}
+              className={cn('menu__link', 'alt-p-xs')}
               href={Routes.HOME}
               size='small'
               shallow
