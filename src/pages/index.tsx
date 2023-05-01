@@ -5,6 +5,7 @@ import { wrapper } from '@/app/store'
 import { testSlice } from '@/app/store/testSlice'
 import { Button } from '@shared/ui/button'
 import { Link } from '@shared/ui/link'
+import { Product } from '@widgets/product'
 
 const Home: NextPage<Page> = ({ mobile }) => {
   return (
@@ -19,64 +20,15 @@ const Home: NextPage<Page> = ({ mobile }) => {
       <Button href={'/about'} variant='secondary' as={Link}>
         Hello world
       </Button>
+      {/*
+        // TODO: Create component "Section"
+      */}
+      <section>
+        <h1>Chebureks</h1>
+        <Product />
+      </section>
 
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section>Some other section</section>
-      <section id='section' style={{ paddingTop: 50 }}>
+      <section id='section' style={{ paddingTop: 1550 }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi deserunt quibusdam
         accusamus at sint esse. Dolore necessitatibus ratione aliquam sint pariatur recusandae velit
         doloribus rem alias, suscipit fugiat quo modi? Excepturi provident deleniti est quos
