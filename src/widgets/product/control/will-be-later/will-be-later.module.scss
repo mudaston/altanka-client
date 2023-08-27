@@ -1,0 +1,9 @@
+.control {
+	display: inline-block;
+
+	min-width: 120px;
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

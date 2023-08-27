@@ -1,8 +1,62 @@
+@import "@app/styles/scss/foundation/_variables.scss";
+@import "@app/styles/scss/foundation/_mixins.scss";
+
 .product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   width: 18.25rem;
+
+  cursor: pointer;
+
+  @include hover {
+    img {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* .product__main */
+  &__main {}
 
   /* .product__image */
   &__image {
     position: relative;
+
+    margin: 0 auto;
+
+    width: 85%;
+    height: 255px;
+
+    img {
+      object-fit: cover;
+
+      transition: transform .25s ease .1s;
+    }
+  }
+
+  /* .product__title */
+  &__title {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  /* .product__description */
+  &__description {
+    margin-top: 8px;
+    font-size: 14px;
+    color: $gray40;
+    line-height: 18px;
+    letter-spacing: 0.4px;
+  }
+
+  /* .product__footer */
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+
+    margin-top: 16px;
   }
 }

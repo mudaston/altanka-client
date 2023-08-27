@@ -10,11 +10,15 @@
 
 @mixin colors {
   // ========================================= //
-  //                    Body                   //
+  //                    Main                   //
   // ========================================= //
 
+  /* Body */
   --alt-body-bg: #{$white};
   --alt-body-text: #{$black};
+
+  /* Header */
+  --alt-desktop-header-background: rgba(255, 255, 255, .85);
 
 
   // ========================================= //
@@ -33,6 +37,9 @@
   --alt-btn-secondary-bg: #{$orange90};
 
   --alt-btn-secondary-bg_hover: #{$orange99};
+  --alt-btn-secondary-bg_disabled: #{$gray90};
+  --alt-btn-secondary-text_disabled: #{$gray60};
+
 
 
   /* Tretiary */

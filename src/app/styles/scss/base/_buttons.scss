@@ -7,8 +7,6 @@
 	align-items: center;
 	justify-content: center;
 
-	width: 100%;
-
 	margin: 0;
 
 	border: none;
@@ -43,6 +41,13 @@
 		@include hover {
 			background-color: var(--alt-btn-secondary-bg_hover);
 		}
+
+		&:disabled {
+			background-color: var(--alt-btn-secondary-bg_disabled);
+			color: var(--alt-btn-secondary-text_disabled);
+
+			cursor: not-allowed;
+		}
 	}
 
 	&[data-type="tretiary"] {
@@ -63,6 +68,8 @@
 	}
 
 	&[data-size="medium"] {
+		height: 40px;
+
 		padding: 8px 20px;
 
 		font-size: 16px;

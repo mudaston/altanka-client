@@ -1,19 +1,33 @@
 .menu {
-  display: flex;
-  min-height: 5rem;
+  position: sticky;
+  top: -0.1px;
+  z-index: 1;
+
+  backdrop-filter: blur(10px);
+  background-color: var(--alt-desktop-header-background);
+
+  box-shadow: rgb(6 5 50 / 5%) 0 0 0;
+
+  &_sticky {
+    box-shadow: rgb(6 5 50 / 5%) 0px 4px 30px;
+  }
+
+  /* .menu__wrapper */
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    min-height: 3.75rem;
+
+  }
 
   /* .menu__brand */
-
-  &__brand {
-  }
+  &__brand {}
 
   /* .menu__brand-title */
-
-  &__brand-title {
-  }
+  &__brand-title {}
 
   /* .menu__ul */
-
   &__ul {
     display: flex;
     align-items: center;
@@ -22,7 +36,5 @@
   }
 
   /* .'menu__link */
-
-  &__link {
-  }
+  &__link {}
 }

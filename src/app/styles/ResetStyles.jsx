@@ -254,4 +254,4 @@ const ResetStyles = () => {
   )
 }
 
-export { ResetStyles }
+export default ResetStyles

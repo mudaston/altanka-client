@@ -1,1 +1,1 @@
-export { ResetStyles } from './ResetStyles'
+export { default as ResetStyles } from './ResetStyles'

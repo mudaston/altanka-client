@@ -1,3 +1,5 @@
+'use client'
+
 import cn from 'classnames'
 import type { LinkProps as NextLinkProps } from 'next/link'
 import NextLink from 'next/link'

@@ -1,0 +1,110 @@
+[
+  {
+    "id": 0,
+    "img": "/assets/img/products/test.png",
+    "title": "Чебурек",
+    "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
+    "price": 133,
+    "inStock": false,
+    "discount": false
+  },
+  {
+    "id": 1,
+    "img": "/assets/img/products/test.png",
+    "title": "Чебурек",
+    "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
+    "price": 143,
+    "inStock": true,
+    "discount": true
+  },
+  {
+    "id": 2,
+    "img": "/assets/img/products/test.png",
+    "title": "Чебурек",
+    "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
+    "price": 82,
+    "inStock": true,
+    "discount": false
+  },
+  {
+    "id": 3,
+    "img": "/assets/img/products/test.png",
+    "title": "Чебурек",
+    "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
+    "price": 114,
+    "inStock": true,
+    "discount": false
+  },
+  {
+    "id": 4,
+    "img": "/assets/img/products/test.png",
+    "title": "Чебурек",
+    "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
+    "price": 89,
+    "inStock": true,
+    "discount": false
+  },
+  {
+    "id": 5,
+    "img": "/assets/img/products/test.png",
+    "title": "Чебурек",
+    "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
+    "price": 104,
+    "inStock": false,
+    "discount": false
+  },
+  {
+    "id": 6,
+    "img": "/assets/img/products/test.png",
+    "title": "Чебурек",
+    "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
+    "price": 146,
+    "inStock": true,
+    "discount": false
+  },
+  {
+    "id": 7,
+    "img": "/assets/img/products/test.png",
+    "title": "Чебурек",
+    "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
+    "price": 114,
+    "inStock": false,
+    "discount": false
+  },
+  {
+    "id": 8,
+    "img": "/assets/img/products/test.png",
+    "title": "Чебурек",
+    "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
+    "price": 78,
+    "inStock": true,
+    "discount": true
+  },
+  {
+    "id": 9,
+    "img": "/assets/img/products/test.png",
+    "title": "Чебурек",
+    "description": "Упевнене поліпшення, розвиток персоналу, захоплюючі технології та динамічне впровадження забезпечили організації визнання і провідну роль на ринку України. Ми впевнені, що впровадження новаторства (досвідченість злагодженої команди) критично важливе для розвитку, тому ми постійно виконуємо зобов'язання та разом з тим, відкриті до продуктів",
+    "price": 105,
+    "inStock": true,
+    "discount": false
+  },
+  {
+    "id": 10,
+    "img": "/assets/img/products/test.png",
+    "title": "Чебурек",
+    "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
+    "price": 99,
+    "inStock": false,
+    "discount": false
+  },
+  {
+    "id": 11,
+    "img": "/assets/img/products/test.png",
+    "title": "Чебурек",
+    "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
+    "price": 85,
+    "inStock": true,
+    "discount": false
+  }
+]
