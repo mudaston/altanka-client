@@ -21,4 +21,3 @@ export const montserrat = Montserrat({
     'Segoe UI Symbol',
   ],
 })
-

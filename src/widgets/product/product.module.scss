@@ -1,5 +1,5 @@
-@import "@app/styles/scss/foundation/_variables.scss";
-@import "@app/styles/scss/foundation/_mixins.scss";
+@import '@app/styles/scss/foundation/_variables.scss';
+@import '@app/styles/scss/foundation/_mixins.scss';
 
 .product {
   display: flex;
@@ -17,7 +17,8 @@
   }
 
   /* .product__main */
-  &__main {}
+  &__main {
+  }
 
   /* .product__image */
   &__image {
@@ -31,7 +32,7 @@
     img {
       object-fit: cover;
 
-      transition: transform .25s ease .1s;
+      transition: transform 0.25s ease 0.1s;
     }
   }
 

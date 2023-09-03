@@ -18,7 +18,6 @@ const header: FC<Props> = ({ mobile }) => {
   const DesktopView = !mobile && <DesktopMenu />
   const MobileView = mobile && <MobileMenu />
 
-
   return (
     <>
       {DesktopView}

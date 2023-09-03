@@ -2,7 +2,7 @@ interface Cheburek {
   id: number
   img: string
   title: string
-  pathname: string,
+  pathname: string
   description: string
   price: number
   inStock: boolean

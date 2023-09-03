@@ -11,5 +11,3 @@ export const getUserAgent = (headers: Array<string>) => {
 
   return headers[findUserAgentIndex(headers) + 1]
 }
-
-
