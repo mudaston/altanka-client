@@ -2,7 +2,8 @@
   {
     "id": 0,
     "img": "/assets/img/products/test.png",
-    "title": "Чебурек",
+    "title": "Чебурек 1",
+    "pathname": "cheburek1",
     "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
     "price": 133,
     "inStock": false,
@@ -11,7 +12,8 @@
   {
     "id": 1,
     "img": "/assets/img/products/test.png",
-    "title": "Чебурек",
+    "title": "Чебурек 2",
+    "pathname": "cheburek2",
     "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
     "price": 143,
     "inStock": true,
@@ -20,7 +22,8 @@
   {
     "id": 2,
     "img": "/assets/img/products/test.png",
-    "title": "Чебурек",
+    "title": "Чебурек 3",
+    "pathname": "cheburek3",
     "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
     "price": 82,
     "inStock": true,
@@ -29,7 +32,8 @@
   {
     "id": 3,
     "img": "/assets/img/products/test.png",
-    "title": "Чебурек",
+    "title": "Чебурек 4",
+    "pathname": "cheburek4",
     "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
     "price": 114,
     "inStock": true,
@@ -38,7 +42,8 @@
   {
     "id": 4,
     "img": "/assets/img/products/test.png",
-    "title": "Чебурек",
+    "title": "Чебурек 5",
+    "pathname": "cheburek5",
     "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
     "price": 89,
     "inStock": true,
@@ -47,7 +52,8 @@
   {
     "id": 5,
     "img": "/assets/img/products/test.png",
-    "title": "Чебурек",
+    "title": "Чебурек 6",
+    "pathname": "cheburek6",
     "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
     "price": 104,
     "inStock": false,
@@ -56,7 +62,8 @@
   {
     "id": 6,
     "img": "/assets/img/products/test.png",
-    "title": "Чебурек",
+    "title": "Чебурек 7",
+    "pathname": "cheburek7",
     "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
     "price": 146,
     "inStock": true,
@@ -65,7 +72,8 @@
   {
     "id": 7,
     "img": "/assets/img/products/test.png",
-    "title": "Чебурек",
+    "title": "Чебурек 8",
+    "pathname": "cheburek8",
     "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
     "price": 114,
     "inStock": false,
@@ -74,7 +82,8 @@
   {
     "id": 8,
     "img": "/assets/img/products/test.png",
-    "title": "Чебурек",
+    "title": "Чебурек 9",
+    "pathname": "cheburek9",
     "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
     "price": 78,
     "inStock": true,
@@ -83,7 +92,8 @@
   {
     "id": 9,
     "img": "/assets/img/products/test.png",
-    "title": "Чебурек",
+    "title": "Чебурек 10",
+    "pathname": "cheburek10",
     "description": "Упевнене поліпшення, розвиток персоналу, захоплюючі технології та динамічне впровадження забезпечили організації визнання і провідну роль на ринку України. Ми впевнені, що впровадження новаторства (досвідченість злагодженої команди) критично важливе для розвитку, тому ми постійно виконуємо зобов'язання та разом з тим, відкриті до продуктів",
     "price": 105,
     "inStock": true,
@@ -92,7 +102,8 @@
   {
     "id": 10,
     "img": "/assets/img/products/test.png",
-    "title": "Чебурек",
+    "title": "Чебурек 11",
+    "pathname": "cheburek11",
     "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
     "price": 99,
     "inStock": false,
@@ -101,7 +112,8 @@
   {
     "id": 11,
     "img": "/assets/img/products/test.png",
-    "title": "Чебурек",
+    "title": "Чебурек 12",
+    "pathname": "cheburek12",
     "description": "Пицца четвертинками с ветчиной, цыпленком, томатами, брынзой, моцареллой, фирменным соусом альфредо",
     "price": 85,
     "inStock": true,

@@ -19,8 +19,6 @@ const DesktopMenu = () => {
       { threshold: [1] }
     )
 
-    console.log(styles)
-
     const header = refHeader.current
 
     if (!header) {

@@ -1,7 +1,7 @@
 const findUserAgentIndex = (headers: Array<string>) =>
-  headers.findIndex((header: string) => header === 'User-Agent')
+  headers.findIndex((header: string) => header.match(/user-agent/gi))
 
-const getUserAgent = (headers: Array<string>) => {
+export const getUserAgent = (headers: Array<string>) => {
   const index = findUserAgentIndex(headers)
   const notFound = -1
 
@@ -12,4 +12,4 @@ const getUserAgent = (headers: Array<string>) => {
   return headers[findUserAgentIndex(headers) + 1]
 }
 
-export { getUserAgent }
+

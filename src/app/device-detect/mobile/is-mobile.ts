@@ -19,6 +19,4 @@ const regular = devices
 
 const regExp = new RegExp(regular, 'gim')
 
-const isMobile = (userAgent: string) => Boolean(userAgent.match(regExp))
-
-export { isMobile }
+export const isMobile = (userAgent: string) => Boolean(userAgent.match(regExp))

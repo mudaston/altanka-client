@@ -1,16 +1,43 @@
-import type { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
+import NextLink from 'next/link'
+import { useRouter } from 'next/router'
+import { useState } from 'react'
 
-import { wrapper } from '@/app/store'
-import { testSlice } from '@/app/store/testSlice'
+import Modal from '@/shared/ui/modal/modal'
 import { chebureks } from '@entities/chebureks'
 import { Button } from '@shared/ui/button'
 import { Link } from '@shared/ui/link'
 import { Product } from '@widgets/product'
 
-const Home: NextPage<Page> = ({ mobile }) => {
+export const Home = () => {
+  const router = useRouter()
+  const [cheburekPathname, setCheburekPathname] = useState(router.asPath)
+
   return (
     <>
+      <Modal watchParam={cheburekPathname}>
+        <div
+          style={{
+            minHeight: 150,
+            background: 'red',
+            position: 'relative',
+          }}
+        >
+          <div>HELLO WORLD!</div>
+          <div
+            onClick={() => router.back()}
+            style={{
+              position: 'absolute',
+              top: -15,
+              right: -15,
+              background: '#fff',
+              fontSize: 24,
+            }}
+          >
+            X
+          </div>
+        </div>
+      </Modal>
       <Head>
         <title>Home</title>
       </Head>
@@ -22,8 +49,8 @@ const Home: NextPage<Page> = ({ mobile }) => {
         Hello world
       </Button>
       {/*
-        // TODO: Create component "Section"
-      */}
+      // TODO: Create component "Section"
+    */}
       <section
         style={{
           padding: '100px',
@@ -48,10 +75,18 @@ const Home: NextPage<Page> = ({ mobile }) => {
           }
 
           return (
-            <Product key={id} {...rest}>
-              {Price}
-              {Control}
-            </Product>
+            <NextLink
+              key={id}
+              href={`/`}
+              as={`/?cheburek=${rest.pathname}`}
+              scroll={false}
+              onClick={() => setCheburekPathname(rest.pathname)}
+            >
+              <Product {...rest}>
+                {Price}
+                {Control}
+              </Product>
+            </NextLink>
           )
         })}
       </section>
@@ -94,16 +129,3 @@ const Home: NextPage<Page> = ({ mobile }) => {
     </>
   )
 }
-
-export const getServerSideProps: GetServerSideProps = wrapper.getServerSideProps(
-  (store) => async (context) => {
-    // store.dispatch(testSlice.actions.increment())
-    store.dispatch(testSlice.actions.setNumber(12))
-
-    return {
-      props: {},
-    }
-  }
-)
-
-export default Home

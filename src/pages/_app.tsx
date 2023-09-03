@@ -35,6 +35,7 @@ MyApp.getInitialProps = async (ctx: any) => {
   const rawHeaders = req?.rawHeaders ?? []
 
   const userAgent = getUserAgent(rawHeaders)
+
   const mobile = isMobile(userAgent)
 
   const pageProps = {}
