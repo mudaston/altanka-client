@@ -8,7 +8,7 @@ import { get, apiRoutes } from '@/shared/lib/api'
 
 const Home: NextPage<Page> = () => {
   useEffect(() => {
-    ;(async () => {
+    (async () => {
       const test = await get<{ username: string }>(apiRoutes.test)
 
       console.log(test)
