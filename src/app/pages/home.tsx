@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
 
+import { useRouterPath } from '@/shared/hooks/use-router-path'
 import Modal from '@/shared/ui/modal/modal'
 import { chebureks } from '@entities/chebureks'
 import { Button } from '@shared/ui/button'
@@ -11,11 +11,12 @@ import { Product } from '@widgets/product'
 
 export const Home = () => {
   const router = useRouter()
-  const [cheburekPathname, setCheburekPathname] = useState(router.asPath)
+
+  const { asPath } = useRouterPath()
 
   return (
     <>
-      <Modal watchParam={cheburekPathname}>
+      <Modal watchParam={asPath}>
         <div
           style={{
             minHeight: 150,
@@ -75,13 +76,7 @@ export const Home = () => {
           }
 
           return (
-            <NextLink
-              key={id}
-              href={`/`}
-              as={`/?cheburek=${rest.pathname}`}
-              scroll={false}
-              onClick={() => setCheburekPathname(rest.pathname)}
-            >
+            <NextLink key={id} href={`/`} as={`/?cheburek=${rest.pathname}`} scroll={false}>
               <Product {...rest}>
                 {Price}
                 {Control}

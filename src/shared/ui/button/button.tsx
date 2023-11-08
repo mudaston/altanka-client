@@ -15,6 +15,9 @@ function Button<T extends React.ElementType = 'button'>({
 }: DynamicallyTypedComponent<T>) {
   const Component = as ?? 'button'
 
+
+
+
   return (
     <Component
       className={cn(className)}
