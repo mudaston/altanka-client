@@ -1,0 +1,27 @@
+{
+  "base": {
+    "primary": {
+      "900": { "value": "#D4600E" },
+      "800": { "value": "#E86100" },
+      "700": { "value": "#FF6900" },
+      "400": { "value": "#FFD2B3" },
+      "200": { "value": "#FFF0E6" }
+    },
+    "neutral": {
+      "900": { "value": "#1A1A1A" },
+      "800": { "value": "#5C6370" },
+      "700": { "value": "#ACAEBB" },
+      "400": { "value": "#E2E2E9" },
+      "200": { "value": "#F3F3F7" },
+      "100": { "value": "#FDFDFD" }
+    },
+    "error": {
+      "900": { "value": "#D12727" },
+      "200": { "value": "#F8DEDF" }
+    },
+    "utility": {
+      "900": { "value": "#0468DB" },
+      "200": { "value": "#B4D2F4" }
+    }
+  }
+}

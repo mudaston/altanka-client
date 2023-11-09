@@ -25,18 +25,6 @@
 		outline: none;
 	}
 
-	@include tablet {
-		background-color: green !important;
-	}
-
-	@include laptop {
-		background-color: yellow !important;
-	}
-
-	@include desktop {
-		background-color: red !important;
-	}
-
 	&[data-type="primary"] {
 		background-color: var(--alt-btn-primary-bg);
 		color: var(--alt-btn-primary-text);
