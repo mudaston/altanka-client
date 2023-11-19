@@ -20,15 +20,14 @@
   text-decoration: none;
   cursor: pointer;
 
-  transition: color .25s ease 0s,
-    background-color .25s ease 0s;
+  transition: color 0.25s ease 0s, background-color 0.25s ease 0s;
 
   &:focus {
     outline: none;
     border: var(--base-border-width-0);
   }
 
-  &[data-type="primary"] {
+  &[data-type='primary'] {
     color: var(--base-neutral-900);
 
     &.active {
@@ -40,19 +39,21 @@
     }
   }
 
-  &[data-type="secondary"] {}
+  &[data-type='secondary'] {
+  }
 
-  &[data-type="tretiary"] {}
+  &[data-type='tretiary'] {
+  }
 
-  &[data-size="small"] {
+  &[data-size='small'] {
     font-size: var(--base-body-sm-font-size);
   }
 
-  &[data-size="medium"] {
+  &[data-size='medium'] {
     font-size: var(--base-body-md-font-size);
   }
 
-  &[data-size="large"] {
+  &[data-size='large'] {
     font-size: var(--base-body-lg-font-size);
   }
 }
