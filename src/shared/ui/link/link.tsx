@@ -12,11 +12,12 @@ interface LinkProps extends ComponentPropsWithoutRef<'a'> {
   variant?: 'primary' | 'secondary' | 'tretiary'
   size?: 'small' | 'medium' | 'big'
   active?: boolean
+  className?: string
 }
 
 type Props = LinkProps & NextLinkProps
 
-const Link: FC<Props> = ({ children, variant, size, active, class: className, ...rest }) => {
+const Link: FC<Props> = ({ children, variant, size, active, className, ...rest }) => {
   const onMouseDown = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     const { href } = e.currentTarget
     const hrefIsAnchor = linkHaveAnchor(href)

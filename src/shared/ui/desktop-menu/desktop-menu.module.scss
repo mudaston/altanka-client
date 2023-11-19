@@ -4,7 +4,7 @@
   z-index: 1;
 
   backdrop-filter: blur(10px);
-  background-color: var(--alt-desktop-header-background);
+  background-color: var(--base-neutral-100);
 
   box-shadow: rgb(6 5 50 / 5%) 0 0 0;
 
@@ -17,16 +17,14 @@
     display: flex;
     align-items: center;
 
-    min-height: 3.75rem;
+    min-height: 60px;
   }
 
   /* .menu__brand */
-  &__brand {
-  }
+  &__brand {}
 
   /* .menu__brand-title */
-  &__brand-title {
-  }
+  &__brand-title {}
 
   /* .menu__ul */
   &__ul {
@@ -37,6 +35,5 @@
   }
 
   /* .'menu__link */
-  &__link {
-  }
+  &__link {}
 }

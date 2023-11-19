@@ -7,13 +7,13 @@
   align-items: center;
   justify-content: center;
 
-  margin: $base-space-0;
+  margin: var(--base-space-0);
 
-  border: $base-border-width-0;
-  border-radius: $base-border-radius-pill;
+  border: var(--base-border-width-0);
+  border-radius: var(--base-border-radius-pill);
 
   font-family: var(--montserrat);
-  font-weight: $base-font-weight-medium;
+  font-weight: var(--base-font-weight-medium);
   line-height: normal;
   text-decoration: none;
   cursor: pointer;
@@ -25,58 +25,58 @@
   }
 
   &[data-type='primary'] {
-    background-color: $base-primary-700;
-    color: $base-neutral-100;
+    background-color: var(--base-primary-700);
+    color: var(--base-neutral-100);
 
     @include hover {
-      background-color: $base-primary-900;
+      background-color: var(--base-primary-900);
     }
   }
 
   &[data-type='secondary'] {
-    background-color: $base-primary-200;
-    color: $base-primary-900;
+    background-color: var(--base-primary-200);
+    color: var(--base-primary-900);
 
     @include hover {
-      background-color: $base-primary-400;
+      background-color: var(--base-primary-400);
     }
 
     &:disabled {
-      background-color: $base-neutral-400;
-      color: $base-neutral-700;
+      background-color: var(--base-neutral-400);
+      color: var(--base-neutral-700);
 
       cursor: not-allowed;
     }
   }
 
   &[data-type='tretiary'] {
-    background-color: $base-neutral-200;
-    color: $base-neutral-800;
+    background-color: var(--base-neutral-200);
+    color: var(--base-neutral-800);
 
     transition: background-color 0.25s ease, color 0.25s ease;
 
     @include hover {
-      background-color: $base-neutral-200;
-      color: $base-neutral-900;
+      background-color: var(--base-neutral-200);
+      color: var(--base-neutral-900);
     }
   }
 
   &[data-size='small'] {
-    padding: $base-space-100 $base-space-200;
-    font-size: $base-body-md-font-size;
+    padding: var(--base-space-100) var(--base-space-200);
+    font-size: var(--base-body-md-font-size);
   }
 
   &[data-size='medium'] {
     height: 40px;
 
-    padding: $base-space-100 $base-space-250;
+    padding: var(--base-space-100) var(--base-space-250);
 
-    font-size: $base-body-lg-font-size;
-    line-height: $base-body-lg-line-height;
+    font-size: var(--base-body-lg-font-size);
+    line-height: var(--base-body-lg-line-height);
   }
 
   &[data-size='large'] {
-    padding: $base-space-150 $base-space-300;
-    font-size: $base-body-lg-font-size;
+    padding: var(--base-space-150) var(--base-space-300);
+    font-size: var(--base-body-lg-font-size);
   }
 }

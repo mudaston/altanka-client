@@ -42,7 +42,7 @@ export const Home = () => {
       <Head>
         <title>Home</title>
       </Head>
-      <div className='alt-p-sm'>Home page</div>
+      <div>Home page</div>
       <Link size='small' href='about'>
         To the About page :DDDD
       </Link>

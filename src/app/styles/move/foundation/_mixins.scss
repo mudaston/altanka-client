@@ -12,19 +12,19 @@
 // ========================================= //
 
 @mixin tablet {
-  @media (max-width: map-get($breakpoints, 'md')) {
+  @media (max-width: var(--base-breakpoint-tablet)) {
     @content;
   }
 }
 
 @mixin laptop {
-  @media (min-width: map-get($breakpoints, 'lg')) {
+  @media (min-width: var(--base-breakpoint-desktop)) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: map-get($breakpoints, 'xl')) {
+  @media (min-width: var(--base-breakpoint-desktop)) {
     @content;
   }
 }
