@@ -1,6 +1,5 @@
-'use client'
-
 import classNames from 'classnames/bind'
+import React from 'react'
 import { useEffect, useRef } from 'react'
 
 import styles from './desktop-menu.module.scss'
