@@ -1,3 +1,4 @@
+import { md5 } from 'js-md5'
 import Head from 'next/head'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
@@ -13,6 +14,40 @@ const Home = () => {
   const router = useRouter()
 
   const { asPath } = useRouterPath()
+
+  const sendPayRequest = async () => {
+    const secretKey = '907cf54af2ef55438ffb8dc876ef465fe5fa9bd0'
+    const orderDate = new Date()
+
+    const merchantSignature = md5.hmac(
+      secretKey,
+      `site_ua1;altanka-client.vercel.app;DH783023;${orderDate};1;UAH;TEST;1;1;`
+    )
+
+    const req = await fetch('https://secure.wayforpay.com/pay', {
+      method: 'POST',
+      body: JSON.stringify({
+        merchantAccount: 'site_ua1',
+        merchantDomainName: 'altanka-client.vercel.app',
+        merchantTransactionSecureType: 'AUTO',
+        orderReference: 'DH783023',
+        orderDate,
+        amount: 1,
+        currency: 'UAH',
+        productName: ['TEST'],
+        productPrice: ['1'],
+        productCount: [1],
+        merchantSignature,
+      }),
+    })
+
+    console.log(req)
+    console.log(await req.json())
+
+    // fetch('https://jsonplaceholder.typicode.com/todos/1')
+    //   .then((response) => response.json())
+    //   .then((json) => console.log(json))
+  }
 
   return (
     <>
@@ -52,6 +87,9 @@ const Home = () => {
       {/*
       // TODO: Create component "Section"
     */}
+      <Button variant='primary' onClick={sendPayRequest}>
+        WayForPay
+      </Button>
       <section
         style={{
           padding: '100px',
