@@ -41,6 +41,7 @@ const Home = () => {
         productCount: [1],
         merchantSignature,
       }),
+      mode: 'no-cors',
     })
 
     console.log(req)
