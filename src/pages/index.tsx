@@ -17,7 +17,9 @@ const Home = () => {
 
   const sendPayRequest = async () => {
     const secretKey = '907cf54af2ef55438ffb8dc876ef465fe5fa9bd0'
-    const orderDate = new Date().getMilliseconds()
+    const orderDate = Date.now()
+
+    console.log({ orderDate })
 
     const merchantSignature = md5.hmac(
       secretKey,
