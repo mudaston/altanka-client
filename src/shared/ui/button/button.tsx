@@ -27,7 +27,7 @@ function Button<T extends React.ElementType = 'button'>({
 }
 
 Button.defaultProps = {
-  variant: 'tretiary',
+  variant: 'primary',
   size: 'small',
   as: 'button',
 }

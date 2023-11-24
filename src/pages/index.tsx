@@ -18,19 +18,29 @@ const Home = () => {
   const sendPayRequest = async () => {
     const secretKey = '907cf54af2ef55438ffb8dc876ef465fe5fa9bd0'
     const orderDate = Date.now()
-
-    console.log({ orderDate })
+    const merchantAccount = 'site_ua1'
+    const merchantDomainName = 'https://altanka-client-git-develop-mudaston.vercel.app'
+    const orderReference = 'DH783023'
+    const amount = 1
+    const currency = 'UAH'
+    const productName = ['TEST']
+    const productPrice = ['1']
+    const productCount = [1]
 
     const merchantSignature = md5.hmac(
       secretKey,
-      `site_ua1;altanka-client.vercel.app;DH783023;${orderDate};1;UAH;TEST;1;1;`
+      `${merchantAccount};${merchantDomainName};${orderReference};${orderDate};${amount};${currency};${productName.join()};${productCount.join()};${productPrice.join()}`
+    )
+
+    console.log(
+      `${merchantAccount};${merchantDomainName};${orderReference};${orderDate};${amount};${currency};${productName.join()};${productCount.join()};${productPrice.join()}`
     )
 
     const req = await fetch('https://secure.wayforpay.com/pay', {
       method: 'POST',
       body: JSON.stringify({
         merchantAccount: 'site_ua1',
-        merchantDomainName: 'https://altanka-client-mudaston.vercel.app',
+        merchantDomainName: 'https://altanka-client-git-develop-mudaston.vercel.app',
         merchantTransactionSecureType: 'AUTO',
         orderReference: 'DH783023',
         orderDate,
@@ -45,15 +55,65 @@ const Home = () => {
     })
 
     console.log(req)
-    console.log(await req.json())
+    // console.log(await req.json())
 
     // fetch('https://jsonplaceholder.typicode.com/todos/1')
     //   .then((response) => response.json())
     //   .then((json) => console.log(json))
   }
 
+  const secretKey = '907cf54af2ef55438ffb8dc876ef465fe5fa9bd0'
+  const orderDate = Date.now()
+  const merchantAccount = 'site_ua1'
+  const merchantDomainName = 'https://altanka-client-git-develop-mudaston.vercel.app'
+  const orderReference = new Date().toString()
+  const amount = 1
+  const currency = 'UAH'
+  const productName = 'TEST'
+  const productPrice = '1'
+  const productCount = 1
+
+  const merchantSignature = md5.hmac(
+    secretKey,
+    `${merchantAccount};${merchantDomainName};${orderReference};${orderDate};${amount};${currency};${productName};${productCount};${productPrice}`
+  )
+
+  // merchantAccount: 'site_ua1',
+  // merchantDomainName: 'https://altanka-client-git-develop-mudaston.vercel.app/',
+  // merchantTransactionSecureType: 'AUTO',
+  // orderReference: 'DH783023',
+  // orderDate,
+  // amount: 1,
+  // currency: 'UAH',
+  // productName: ['TEST'],
+  // productPrice: ['1'],
+  // productCount: [1],
+  // merchantSignature,
+
   return (
     <>
+      <form method='post' action='https://secure.wayforpay.com/pay' acceptCharset='utf-8'>
+        <input hidden name='merchantAccount' value={merchantAccount} />
+        <input hidden name='merchantDomainName' value={merchantDomainName} />
+        <input hidden name='orderReference' value={orderReference} />
+        <input hidden name='orderDate' value={orderDate} />
+        <input hidden name='amount' value={amount} />
+        <input hidden name='currency' value='UAH' />
+        <input hidden name='productName[]' value={productName} />
+        <input hidden name='productPrice[]' value={productPrice} />
+        <input hidden name='productCount[]' value={productCount} />
+        <input hidden name='clientFirstName' value='Вася' />
+        <input hidden name='clientLastName' value='Пупкин' />
+        <input hidden name='clientAddress' value='пр. Гагарина, 12' />
+        <input hidden name='clientCity' value='Днепропетровск' />
+        <input hidden name='clientEmail' value='some@mail.com' />
+        <input hidden name='defaultPaymentSystem' value='card' />
+        <input hidden name='merchantSignature' value={merchantSignature} />
+        <Button type='submit' variant='primary'>
+          WayForPay
+        </Button>
+      </form>
+
       <Modal watchParam={asPath}>
         <div
           style={{
@@ -90,9 +150,6 @@ const Home = () => {
       {/*
       // TODO: Create component "Section"
     */}
-      <Button variant='primary' onClick={sendPayRequest}>
-        WayForPay
-      </Button>
       <section
         style={{
           padding: '100px',

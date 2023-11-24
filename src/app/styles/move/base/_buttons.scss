@@ -2,7 +2,9 @@
 //               Base - buttons              //
 // ========================================= //
 
-[type='button'] {
+[type='button'],
+[type='submit'],
+[type='reset'] {
   display: flex;
   align-items: center;
   justify-content: center;
