@@ -28,7 +28,7 @@ const Home = () => {
       method: 'POST',
       body: JSON.stringify({
         merchantAccount: 'site_ua1',
-        merchantDomainName: 'altanka-client.vercel.app',
+        merchantDomainName: 'https://altanka-client-mudaston.vercel.app',
         merchantTransactionSecureType: 'AUTO',
         orderReference: 'DH783023',
         orderDate,
