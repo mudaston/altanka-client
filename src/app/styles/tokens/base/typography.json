@@ -1,0 +1,75 @@
+{
+  "base": {
+    "font-family": { "value": "var(--font-montserrat)" },
+    "headline": {
+      "xl": {
+        "font-size": { "value": "96px" },
+        "font-weight": { "value": "{base.font-weight.light}" },
+        "line-height": { "value": "134px" }
+      },
+      "lg": {
+        "font-size": { "value": "60px" },
+        "font-weight": { "value": "{base.font-weight.light}" },
+        "line-height": { "value": "84px" }
+      },
+      "md": {
+        "font-size": { "value": "48px" },
+        "font-weight": { "value": "{base.font-weight.regular}" },
+        "line-height": { "value": "67px" }
+      },
+      "sm": {
+        "font-size": { "value": "34px" },
+        "font-weight": { "value": "{base.font-weight.regular}" },
+        "line-height": { "value": "47px" }
+      },
+      "xs": {
+        "font-size": { "value": "24px" },
+        "font-weight": { "value": "{base.font-weight.regular}" },
+        "line-height": { "value": "33px" }
+      },
+      "xxs": {
+        "font-size": { "value": "20px" },
+        "font-weight": { "value": "{base.font-weight.medium}" },
+        "line-height": { "value": "28px" }
+      }
+    },
+    "subtitle": {
+      "lg": {
+        "font-size": { "value": "16px" },
+        "font-weight": { "value": "{base.font-weight.regular}" },
+        "line-height": { "value": "22px" }
+      },
+      "md": {
+        "font-size": { "value": "14px" },
+        "font-weight": { "value": "{base.font-weight.medium}" },
+        "line-height": { "value": "19px" }
+      }
+    },
+    "body": {
+      "lg": {
+        "font-size": { "value": "16px" },
+        "font-weight": { "value": "{base.font-weight.regular}" },
+        "line-height": { "value": "19px" }
+      },
+      "md": {
+        "font-size": { "value": "14px" },
+        "font-weight": { "value": "{base.font-weight.regular}" },
+        "line-height": { "value": "17px" }
+      },
+      "sm": {
+        "font-size": { "value": "12px" },
+        "font-weight": { "value": "{base.font-weight.regular}" },
+        "line-height": { "value": "14px" }
+      }
+    },
+    "font-weight": {
+      "light": { "value": 300 },
+      "regular": { "value": 400 },
+      "medium": { "value": 500 },
+      "semibold": { "value": 600 },
+      "bold": { "value": 700 },
+      "extrabold": { "value": 800 },
+      "black": { "value": 900 }
+    }
+  }
+}

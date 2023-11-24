@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:tokens": "npx style-dictionary build",
     "start": "next start",
     "lint": "next lint . ",
     "lint:fix": "npm run lint -- --fix",
@@ -46,6 +47,7 @@
     "lint-staged": "^15.0.2",
     "prettier": "^2.8.7",
     "sass": "^1.61.0",
+    "style-dictionary": "^3.9.0",
     "typescript": "^5.0.4"
   }
 }

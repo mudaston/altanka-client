@@ -8,7 +8,8 @@ import { isMobile } from '@app/device-detect/mobile'
 import { wrapper } from '@app/store'
 import RootLayout from '@layouts/root-layout'
 
-import '@app/styles/scss/main.scss'
+import '@app/styles/move/foundation/_variables.css'
+import '@app/styles/move/main.scss'
 
 function MyApp({ Component, ...rest }: AppProps) {
   const { store, props } = wrapper.useWrappedStore(rest)

@@ -1,5 +1,4 @@
-@import '@app/styles/scss/foundation/_variables.scss';
-@import '@app/styles/scss/foundation/_mixins.scss';
+@import '@app/styles/move/foundation/_mixins.scss';
 
 .product {
   display: flex;
@@ -47,7 +46,7 @@
   &__description {
     margin-top: 8px;
     font-size: 14px;
-    color: $gray40;
+    // color: $gray40;
     line-height: 18px;
     letter-spacing: 0.4px;
   }

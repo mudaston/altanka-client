@@ -1,0 +1,59 @@
+// ========================================= //
+//               Base - buttons              //
+// ========================================= //
+
+.alt-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  margin: var(--base-space-0);
+
+  outline: none;
+  border: var(--base-border-width-0);
+
+  font-family: var(--montserrat);
+  font-weight: var(--base-font-weight-medium);
+  line-height: normal;
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: color 0.25s ease 0s, background-color 0.25s ease 0s;
+
+  &:focus {
+    outline: none;
+    border: var(--base-border-width-0);
+  }
+
+  &[data-type='primary'] {
+    color: var(--base-neutral-900);
+
+    &.active {
+      color: var(--base-primary-700);
+    }
+
+    @include hover {
+      color: var(--base-primary-700);
+    }
+  }
+
+  &[data-type='secondary'] {
+  }
+
+  &[data-type='tretiary'] {
+  }
+
+  &[data-size='small'] {
+    font-size: var(--base-body-sm-font-size);
+  }
+
+  &[data-size='medium'] {
+    font-size: var(--base-body-md-font-size);
+  }
+
+  &[data-size='large'] {
+    font-size: var(--base-body-lg-font-size);
+  }
+}
